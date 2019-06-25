@@ -3,7 +3,7 @@ clearvars
 close all
 %% Inputs
 P_1= 1e3; P_2= 2e3;
-E=[7.3084e10];
+E_new=[7.3084e10];
 Area=[2.38761e-4];
 I=[4.32157e-8];
 M_Info=[1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;1,1;];
@@ -27,7 +27,7 @@ for i=1:Nm
     Lm=sqrt(dx^2+dy^2);
     Cx=dx/Lm;
     Cy=dy/Lm;
-    Em=E(M_Info(i,1));
+    Em=E_new(M_Info(i,1));
     Ame=Area(M_Info(i,2));
     Dof=[2*N1-1,2*N1,2*N2-1,2*N2];    
     Smd(:,:,i)=Em*Ame/Lm*[Cx^2 Cx*Cy -Cx^2 -Cx*Cy;
@@ -143,4 +143,3 @@ for i=1:Nm
 end
 Am
 
-Dewany change 4
