@@ -141,5 +141,5 @@ for i=1:Nm
     xlabel('x_m')
     title(['Bending Diagram of member ',num2str(i)])
 end
-Am
+
 
