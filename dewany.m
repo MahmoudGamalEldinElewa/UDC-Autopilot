@@ -34,3 +34,4 @@ end
 ind=[find(RL==0);find(RL==1)];
 Re(ind,1)=(1:2*Nn)';
 ndpos=length(find(RL==0));
+ 
