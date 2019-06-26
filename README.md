@@ -18,7 +18,7 @@ i) Nodal displacements. ii) Support Reactions. iii) Members end actions. iv) Def
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 The Main program consists of 3 parts:
-- 
+
 - Preprocessing:
 Input Data (Member and Joint Information, Load, Constraints) 
 • Build Model (Member stiffness matrix 𝑆𝑀 , Joint stiffness matrix 𝑆𝐽 ) 
