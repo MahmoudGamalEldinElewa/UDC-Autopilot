@@ -1,4 +1,21 @@
 function [Dj,AR] = Renum_Part_Solve(Sj,Re,ndpos,Nn,Ac,Dj)
+
+%Renumbering function
+%
+%   Arguments:
+%   Sj: Total structure stiffness matrices in member axis
+%   Re: Renumbering order
+%   ndpos: The position of restrained DOF
+%   Nn: Number of nodes
+%   Ac: Combined loads vector
+%   Dj: Deformation vector
+
+
+
+%   Returns:
+%   Dj: Deformation vector
+%   AR: Restrained end actions
+
 %% Renumbering and Partitioning
 Sjre(Re,Re)=Sj;                         % Renumbered Joint Stiffness Matrix
 S=Sjre(1:ndpos,1:ndpos);                % Get S
