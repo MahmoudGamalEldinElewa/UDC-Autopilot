@@ -44,7 +44,7 @@ end
 
 %% Get Fixed End Actions, Equivalent loads,Combined loads and  Renumbering DOF and Get number of possible DOF
 
-[Ac,AE,Re,ndpos,Aml] = dewany(Nn,Nm,M_Load,N_Load,Connection,L,RL,RT);
+[Ac,AE,Re,ndpos,Aml] = Aml_AE_Ac_Renum(Nn,Nm,M_Load,N_Load,Connection,L,RL,RT);
 
 %% Renumbering, Partitioning, Solving
 
