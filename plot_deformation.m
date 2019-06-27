@@ -1,4 +1,13 @@
 function [] = plot_deformation(Connection,Dj,Nodes_Coordinates,Nm)
+
+%Plotting deformation diagrams
+%
+%   Arguments:
+%   Nm: Number of Members
+%   Connection: The vector containing the end points of the members and their coordinates
+%   Nodes_Coordinates: Coordinates of nodes
+%   Dj: Deformation vector
+
 %% Plotting Deformation
 DSF=100;
 figure
