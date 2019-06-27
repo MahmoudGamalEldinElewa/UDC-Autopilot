@@ -1,4 +1,20 @@
 function [Am] = plot_diagrams(Connection,Dj,Nm,M_Load,Aml,RT,Smd,L)
+%Plotting diagreams function
+%   Arguments:
+%   Connection: The vector containing the end points of the members 
+%   Dj: Deformation vector
+%   Nm: Number of Members
+%   M_Load: the member loads
+%   Aml: Fixed end actions 
+%   RT: Rotation Matricies of the memebers
+%   Smd: members structure stiffness matrices
+%   L: Lenghthes of Members
+
+
+%   Returns:
+%   Am: Member end actions
+
+
 %% Plotting Diagrams
 xbar1=[0:0.1:0.5]';
 xbar2=xbar1+0.5;
