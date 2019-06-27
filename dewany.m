@@ -1,4 +1,4 @@
-function [Ac,AE,Re,ndpos,Aml] = dewany(Nn,Nm,M_Load,N_Load,Connection,L,RL,RT)
+function [Ac,AE,Re,ndpos,Aml] = Aml_AE_Ac_Renum(Nn,Nm,M_Load,N_Load,Connection,L,RL,RT)
 %% Get Fixed End Actions and Equivalent loads
 AE=zeros(2*Nn,1);
 Aml=zeros(Nm,4);
