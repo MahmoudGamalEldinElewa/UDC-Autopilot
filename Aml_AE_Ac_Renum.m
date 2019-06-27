@@ -2,7 +2,7 @@ function [Ac,AE,Re,ndpos,Aml] = Aml_AE_Ac_Renum(Nn,Nm,M_Load,N_Load,Connection,L
 
 %Fixed end action , equivalent load and combined loads
 %
-%   Inputs:
+%   Arguments:
 %   Nn: Number of nodes
 %   Nm: Number of Members
 %   M_Load: the member loads
@@ -11,6 +11,13 @@ function [Ac,AE,Re,ndpos,Aml] = Aml_AE_Ac_Renum(Nn,Nm,M_Load,N_Load,Connection,L
 %   L: Lenghthes of Members
 %   Rl: Restrained DOF List
 %   RT: Rotation Matricies of the memebers
+
+%   Returns:
+%   Ac: Combined loads vector
+%   AE: Member reactions
+%   Re: Renumbering order
+%   ndpos: The position of restrained DOF
+%   Aml: Fixed end actions 
 
 %% Get Fixed End Actions and Equivalent loads
 AE=zeros(2*Nn,1);
