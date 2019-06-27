@@ -1,4 +1,24 @@
 function [Nm,Nn,Dj,RL,RT,L,Sj,Smd] = Dj_RL_StiffnessMat(M_Info,Nodes_Coordinates,Constr,Connection,E,Area)
+
+%Calculating the deformations and forming restrained DOF List
+%   Arguments:
+%   Connection: The vector containing the end points of the members 
+%   Nodes_Coordinates: Coordinates of nodes
+%   M_Info: Vector containing the member information in matrix form
+%   Constr: Constraint DOF list
+%   Area: Area of cross section for each member
+
+%   Returns:
+%
+%   Nn: Number of nodes
+%   Nm: Number of Members
+%   Dj: Deformation vector
+%   Sj: Total structure stiffness matrices in member axis
+%   Smd: members structure stiffness matrices
+%   L: Lenghthes of Members
+%   Rl: Restrained DOF List
+%   RT: Rotation Matricies of the memebers
+
 %% Get Dj and RL
 Nm=size(M_Info,1);
 Nn=size(Nodes_Coordinates,1);
